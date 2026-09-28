@@ -12,7 +12,19 @@ Workspace: Root Directory
 
 ---
 
-## 2. Dynamic Context Router (File Map & Loading Instructions)
+## 2. The Grill-Me Protocol (Mandatory Planning & Project Guardrail)
+Whenever the user brings a new project idea, asks to design a system, or proposes a major weekly plan:
+- **Rule:** DO NOT immediately generate a solution, architecture, or 10-step plan.
+- **Action:** Stop and trigger the Grill-Me loop. Ask 3 to 5 targeted, high-friction questions to extract:
+  1. Hard constraints (actual available hours, budget, hard deadlines, gear limitations).
+  2. Real status (what is already built, who has paid, what stack or materials are fixed).
+  3. Potential failure points (what failed previously, what manual bottlenecks are being ignored).
+- Format the questions clearly with selectable options or concise bullet points.
+- Only after the user answers may you generate the implementation plan, code, or schedule.
+
+---
+
+## 3. Dynamic Context Router (File Map & Loading Instructions)
 To conserve context while preventing information drift, read specific workspace files strictly when triggered by the task context:
 
 1. **Daily Planning & Brain Dumps:**
@@ -42,7 +54,7 @@ To conserve context while preventing information drift, read specific workspace 
 
 ---
 
-## 3. Specialized Skills Map
+## 4. Specialized Skills Map
 Activate specialized skills when available in `.agents/skills/`:
 - **Task & Schedule Architecture** -> Skill: `mirror-accountability` (Brain dumps, weekly resets, Eisenhower sorting).
 - **Prose Review & Humanizing** -> Skill: `humanizer` (Stripping corporate AI tells, removing fake profundity).

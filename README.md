@@ -1,6 +1,6 @@
 # The Mirror System: Persistent AI Operating Assistant Template
 
-> An open-source, local-first framework that turns **any AI tool or LLM**—whether an AI code editor (Antigravity, Cursor, Windsurf, VS Code Copilot, Claude Code) or a standard web chat (ChatGPT, Gemini, Claude)—into a persistent executive assistant with zero daily memory loss.
+> An open-source, local-first framework that turns **any AI tool or LLM** - whether an AI code editor (Antigravity, Cursor, Windsurf, VS Code Copilot, Claude Code) or a standard web chat (ChatGPT, Gemini, Claude) - into a persistent executive assistant with zero daily memory loss.
 
 Built by **Endurance Owie** ([LinkedIn](https://www.linkedin.com/in/endurance-owie))
 
@@ -83,9 +83,32 @@ When you ask an AI: *"Help me design a launch plan for my app"* or *"Help me stu
 
 Instead of letting the AI guess, you force it to **interrogate you first**.
 
-### The Universal Grill-Me Prompt (Copy & Paste Into ANY LLM)
+This protocol works in **any LLM** (ChatGPT, Gemini, Claude, Cursor, Antigravity) across two distinct modes:
 
-Drop this exact prompt into ChatGPT, Gemini, Claude, or your code editor whenever you are starting a new project, plan, or piece of writing:
+---
+
+### Mode 1: The Initial Onboarding Grill-Down (Day 1 Setup)
+When you first clone this repository, you do not need to fill out markdown files manually. You paste this prompt to let the AI interview you and configure the entire workspace:
+
+```text
+I just cloned this workspace template. DO NOT write code or plan tasks yet.
+
+Your first job is to GRILL ME so we can calibrate this entire workspace to my actual life, schedule, and constraints.
+
+Ask me 5 to 7 sharp, diagnostic questions covering:
+1. Identity & Role: My name, what I do (student, software engineer, founder, creator), and my organization or university.
+2. Schedule Reality: My non-negotiable daily recurring commitments (lecture blocks, shifts, chapel, recurring team syncs).
+3. Physical Constraints: My primary work gear (laptop, tablet), battery life limits, and internet reality (e.g. reliable home fiber vs. restricted campus Wi-Fi hours).
+4. Cognitive Windows: What hours of the day my brain actually functions best for deep work vs. when I am exhausted.
+5. The Current Season: The top 2 or 3 major priorities that actually matter over the next 30 days.
+
+Format your questions clearly with selectable options where possible. After I answer, automatically populate my AGENTS.md, 02_identity_and_rules/profile_and_constraints.md, and 02_identity_and_rules/weekly_timetable.md so this entire system is specified for me.
+```
+
+---
+
+### Mode 2: Project & Strategy Stress-Testing (Ongoing Work)
+Whenever you start a new project, feature build, exam sprint, or writing piece, drop this prompt into your AI:
 
 ```text
 I want to [INSERT GOAL OR PROJECT HERE, e.g. build an MVP for student book preorders / prepare for finals / write a personal essay], but DO NOT give me a solution, plan, or draft yet.
@@ -111,14 +134,14 @@ Format your questions clearly with selectable options where possible. Wait for m
 
 ### Step 1: Clone This Repository
 ```bash
-git clone https://github.com/<your-username>/antigravity-mirror-template.git my-assistant
+git clone https://github.com/TeabreakVenerate/Assistant.git my-assistant
 cd my-assistant
 ```
 
-### Step 2: Customize Your Identity
-1. Open `AGENTS.md` and replace the placeholder fields (`{{USER_NAME}}`, `{{FIELD_OR_ROLE}}`, `{{ORGANIZATION_OR_UNIVERSITY}}`).
-2. Fill in `02_identity_and_rules/weekly_timetable.md` with your recurring commitments.
-3. Fill in `02_identity_and_rules/profile_and_constraints.md` with your device battery windows and working hours.
+### Step 2: Run the Onboarding Grill-Me Prompt (Instant Setup)
+Open this folder in your code editor or attach `AGENTS.md` in your chat window, and paste the **Mode 1: Initial Onboarding Grill-Down** prompt above. 
+
+The AI will ask you 5 to 7 questions about your daily schedule, constraints, and priorities, and then automatically configure `AGENTS.md`, `profile_and_constraints.md`, and `weekly_timetable.md` for you.
 
 ### Step 3: Run Your First Daily Brain Dump
 Type or dictate a raw, messy list of everything in your head:
