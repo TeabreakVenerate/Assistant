@@ -3,6 +3,7 @@
 > An open-source, local-first framework that turns **any AI tool or LLM** - whether an AI code editor (Antigravity, Cursor, Windsurf, VS Code Copilot, Claude Code) or a standard web chat (ChatGPT, Gemini, Claude) - into a persistent executive assistant with zero daily memory loss.
 
 Built by **Endurance Owie** ([LinkedIn](https://www.linkedin.com/in/endurance-owie))
+([Website](https://www.Endurance.Website))
 
 ---
 
